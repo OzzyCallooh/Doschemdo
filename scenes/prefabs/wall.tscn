@@ -1,15 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5guvknjf3lwq"]
+[gd_scene load_steps=4 format=3 uid="uid://c5guvknjf3lwq"]
 
 [ext_resource type="Texture2D" uid="uid://c4cc0xlbrxuu7" path="res://images/brick-wall.svg" id="1_ir5cp"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jfoff"]
+friction = 0.0
+bounce = 1.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28eq3"]
 size = Vector2(40, 40)
 
-[node name="Wall" type="RigidBody2D"]
+[node name="Wall" type="StaticBody2D"]
 position = Vector2(304, 181)
-gravity_scale = 0.0
-freeze = true
-freeze_mode = 1
+physics_material_override = SubResource("PhysicsMaterial_jfoff")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_28eq3")
