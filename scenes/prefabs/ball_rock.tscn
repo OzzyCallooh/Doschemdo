@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://mm2h7io7a0wh" path="res://images/rock.svg" id="3_ftwfk"]
 
 [node name="Ball (Rock)" instance=ExtResource("1_six2l")]
+collision_layer = 4
+collision_mask = 11
 bouncy = ExtResource("2_jftn0")
 
 [node name="Sprite2D" parent="." index="2"]

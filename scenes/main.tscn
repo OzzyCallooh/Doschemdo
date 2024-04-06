@@ -289,65 +289,112 @@ position = Vector2(1099, 624)
 [node name="Wall58" parent="Walls" instance=ExtResource("1_7brt3")]
 position = Vector2(1139, 624)
 
-[node name="Ball (Paper)" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(567, 196)
+[node name="Balls" type="Node" parent="."]
 
-[node name="Ball (Paper)2" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(540, 259)
+[node name="Ball (Paper)" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(495, 140)
 
-[node name="Ball (Paper)3" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(604, 255)
+[node name="Ball (Paper)2" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(418, 264)
 
-[node name="Ball (Paper)4" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(636, 194)
+[node name="Ball (Paper)3" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(599, 254)
 
-[node name="Ball (Paper)5" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(672, 256)
+[node name="Ball (Paper)4" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(737, 131)
 
-[node name="Ball (Paper)6" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(578, 315)
+[node name="Ball (Paper)5" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(744, 323)
 
-[node name="Ball (Paper)7" parent="." instance=ExtResource("2_doswe")]
-position = Vector2(647, 313)
+[node name="Ball (Paper)6" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(649, 417)
 
-[node name="Ball (Rock)" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(934, 426)
+[node name="Ball (Paper)7" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(485, 413)
 
-[node name="Ball (Rock)2" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(909, 493)
+[node name="Ball (Paper)8" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(511, 326)
 
-[node name="Ball (Rock)3" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(993, 483)
+[node name="Ball (Paper)9" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(615, 339)
 
-[node name="Ball (Rock)4" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(1004, 417)
+[node name="Ball (Paper)10" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(688, 240)
 
-[node name="Ball (Rock)5" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(1059, 473)
+[node name="Ball (Paper)11" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(601, 177)
 
-[node name="Ball (Rock)6" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(1037, 541)
+[node name="Ball (Paper)12" parent="Balls" instance=ExtResource("2_doswe")]
+position = Vector2(537, 568)
 
-[node name="Ball (Rock)7" parent="." instance=ExtResource("3_pxa8x")]
-position = Vector2(959, 545)
+[node name="Ball (Rock)" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(868, 329)
 
-[node name="Ball (Scissors)" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(189, 416)
+[node name="Ball (Rock)2" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(776, 432)
 
-[node name="Ball (Scissors)2" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(153, 473)
+[node name="Ball (Rock)3" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(941, 461)
 
-[node name="Ball (Scissors)3" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(237, 482)
+[node name="Ball (Rock)8" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(893, 499)
 
-[node name="Ball (Scissors)4" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(265, 421)
+[node name="Ball (Rock)9" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(860, 409)
 
-[node name="Ball (Scissors)5" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(316, 487)
+[node name="Ball (Rock)10" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(969, 389)
 
-[node name="Ball (Scissors)6" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(276, 540)
+[node name="Ball (Rock)11" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(1008, 491)
 
-[node name="Ball (Scissors)7" parent="." instance=ExtResource("4_vxvic")]
-position = Vector2(188, 536)
+[node name="Ball (Rock)12" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(170, 117)
+
+[node name="Ball (Rock)4" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(1023, 326)
+
+[node name="Ball (Rock)5" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(1067, 438)
+
+[node name="Ball (Rock)6" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(1011, 563)
+
+[node name="Ball (Rock)7" parent="Balls" instance=ExtResource("3_pxa8x")]
+position = Vector2(840, 564)
+
+[node name="Ball (Scissors)" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(149, 342)
+
+[node name="Ball (Scissors)2" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(277, 351)
+
+[node name="Ball (Scissors)12" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(1044, 96)
+
+[node name="Ball (Scissors)3" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(220, 461)
+
+[node name="Ball (Scissors)4" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(330, 550)
+
+[node name="Ball (Scissors)5" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(156, 561)
+
+[node name="Ball (Scissors)6" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(77, 464)
+
+[node name="Ball (Scissors)7" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(359, 456)
+
+[node name="Ball (Scissors)8" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(284, 425)
+
+[node name="Ball (Scissors)9" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(151, 489)
+
+[node name="Ball (Scissors)10" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(243, 538)
+
+[node name="Ball (Scissors)11" parent="Balls" instance=ExtResource("4_vxvic")]
+position = Vector2(189, 399)

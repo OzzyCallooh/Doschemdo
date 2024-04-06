@@ -3,3 +3,4 @@
 [ext_resource type="PackedScene" uid="uid://xk4cxaj6wq4j" path="res://scenes/prefabs/ball.tscn" id="1_u5ca4"]
 
 [node name="Ball (Paper)" instance=ExtResource("1_u5ca4")]
+collision_mask = 13

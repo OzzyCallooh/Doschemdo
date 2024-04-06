@@ -4,6 +4,10 @@ class_name Bouncy
 @export var name: String = ""
 @export var texture: Texture = null
 @export var color: Color = Color.WHITE
+@export_flags_2d_physics var collision_mask
+@export_flags_2d_physics var collision_layer
+@export_flags_2d_physics var area2d_mask
+@export_flags_2d_physics var area2d_layer
 
 var bouncy_transitions: BouncyTransitions:
 	get:

@@ -10,6 +10,7 @@ radius = 14.0357
 
 [node name="Ball" type="RigidBody2D"]
 position = Vector2(617, 276)
+collision_layer = 2
 physics_material_override = ExtResource("1_85nfe")
 lock_rotation = true
 contact_monitor = true
@@ -21,6 +22,8 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_cbxkk")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 14
+collision_mask = 14
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(2, 2)
