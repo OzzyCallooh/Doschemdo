@@ -1,13 +1,19 @@
 extends RigidBody2D
 class_name Ball
 
+static var ball_count: Dictionary = Dictionary()
+
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var area2d: Area2D = $Area2D
 @export var start_speed_mean: float = 140
 @export var start_speed_deviation: float = 40
 @export var bouncy: Bouncy:
 	set(value):
+		if bouncy != null:
+			ball_count[bouncy] = ball_count.get(bouncy, 1) - 1
 		bouncy = value
+		if bouncy != null:
+			ball_count[bouncy] = ball_count.get(bouncy, 0) + 1
 		update_sprite()
 
 func _ready():
