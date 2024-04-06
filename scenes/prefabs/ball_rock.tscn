@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://cykmtluwnkas3"]
+
+[ext_resource type="PackedScene" uid="uid://xk4cxaj6wq4j" path="res://scenes/prefabs/ball.tscn" id="1_six2l"]
+[ext_resource type="Resource" uid="uid://brdr8mn8ul1l4" path="res://resources/rock.tres" id="2_jftn0"]
+[ext_resource type="Texture2D" uid="uid://mm2h7io7a0wh" path="res://images/rock.svg" id="3_ftwfk"]
+
+[node name="Ball (Rock)" instance=ExtResource("1_six2l")]
+bouncy = ExtResource("2_jftn0")
+
+[node name="Sprite2D" parent="." index="2"]
+texture = ExtResource("3_ftwfk")

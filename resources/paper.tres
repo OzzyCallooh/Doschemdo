@@ -7,4 +7,3 @@
 script = ExtResource("1_6y5vb")
 name = "Paper"
 texture = ExtResource("2_4woxo")
-transitionNames = null

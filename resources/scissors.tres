@@ -7,4 +7,3 @@
 script = ExtResource("1_su7d4")
 name = "Scissors"
 texture = ExtResource("2_xjs3k")
-transitionNames = null

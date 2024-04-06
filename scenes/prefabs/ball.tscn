@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://xk4cxaj6wq4j"]
+
+[ext_resource type="Script" path="res://scenes/prefabs/ball.gd" id="1_anaht"]
+[ext_resource type="Resource" uid="uid://bnio3br5hjy8q" path="res://resources/paper.tres" id="2_5h80t"]
+[ext_resource type="Texture2D" uid="uid://cjfgpnb3af74x" path="res://images/paper.svg" id="3_3irf7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cbxkk"]
+radius = 14.0357
+
+[node name="Ball" type="RigidBody2D"]
+position = Vector2(617, 276)
+contact_monitor = true
+script = ExtResource("1_anaht")
+bouncy = ExtResource("2_5h80t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_cbxkk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_cbxkk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0887553, 0.0887553)
+texture = ExtResource("3_3irf7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

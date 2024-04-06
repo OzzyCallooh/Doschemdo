@@ -7,4 +7,3 @@
 script = ExtResource("1_utqmr")
 name = "Rock"
 texture = ExtResource("2_7dyrj")
-transitionNames = null

@@ -8,6 +8,10 @@ class_name Ball
 		update_sprite()
 
 func _ready():
+	linear_velocity = Vector2(
+		randf_range(-150, 150),
+		randf_range(-150, 150)
+	)
 	update_sprite()
 
 func _process(_delta):
@@ -22,6 +26,5 @@ func update_sprite():
 		sprite.texture = null
 
 func _on_body_entered(body: Node):
-	if body is Ball:
-		pass
-	
+	if body is Ball and body.bouncy and body.bouncy.transitions.has(bouncy):
+		bouncy = body.bouncy
