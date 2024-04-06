@@ -1,23 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvt8fhbtp86om"]
+[gd_scene load_steps=5 format=3 uid="uid://bvt8fhbtp86om"]
 
+[ext_resource type="Script" path="res://scenes/prefabs/ball.gd" id="1_6nikr"]
 [ext_resource type="PackedScene" uid="uid://c5guvknjf3lwq" path="res://scenes/prefabs/wall.tscn" id="1_7brt3"]
-[ext_resource type="Texture2D" uid="uid://cjfgpnb3af74x" path="res://images/paper.svg" id="1_k3wf3"]
+[ext_resource type="Resource" uid="uid://bnio3br5hjy8q" path="res://resources/paper.tres" id="2_wb6jc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbxkk"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(-5, 0)
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Ball" type="RigidBody2D" parent="."]
 position = Vector2(617, 276)
+script = ExtResource("1_6nikr")
+bouncy = ExtResource("2_wb6jc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_cbxkk")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-position = Vector2(0, -2)
-scale = Vector2(0.0444817, 0.0444817)
-texture = ExtResource("1_k3wf3")
+[node name="Sprite2D" type="Sprite2D" parent="Ball"]
+scale = Vector2(0.0887553, 0.0887553)
 
 [node name="Walls" type="Node" parent="."]
 
@@ -287,3 +289,5 @@ position = Vector2(1099, 624)
 
 [node name="Wall58" parent="Walls" instance=ExtResource("1_7brt3")]
 position = Vector2(1139, 624)
+
+[connection signal="body_entered" from="Ball" to="Ball" method="_on_body_entered"]

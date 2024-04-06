@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Bouncy" load_steps=4 format=3 uid="uid://bnio3br5hjy8q"]
+[gd_resource type="Resource" script_class="Bouncy" load_steps=3 format=3 uid="uid://bnio3br5hjy8q"]
 
 [ext_resource type="Script" path="res://scripts/bouncy.gd" id="1_6y5vb"]
 [ext_resource type="Texture2D" uid="uid://cjfgpnb3af74x" path="res://images/paper.svg" id="2_4woxo"]
-[ext_resource type="Resource" uid="uid://brdr8mn8ul1l4" path="res://resources/rock.tres" id="3_g3mjy"]
 
 [resource]
 script = ExtResource("1_6y5vb")
+name = "Paper"
 texture = ExtResource("2_4woxo")
-transitions = Array[ExtResource("1_6y5vb")]([ExtResource("3_g3mjy")])
+transitionNames = null

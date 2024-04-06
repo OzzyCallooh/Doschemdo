@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BouncyTransitions" load_steps=3 format=3 uid="uid://brjyiy2ih7kee"]
+
+[ext_resource type="Script" path="res://scripts/bouncy_transitions.gd" id="1_vgvt6"]
+[ext_resource type="Resource" uid="uid://brdr8mn8ul1l4" path="res://resources/rock.tres" id="2_86emm"]
+
+[resource]
+script = ExtResource("1_vgvt6")
+transitions = Array[Resource("res://scripts/bouncy.gd")]([ExtResource("2_86emm")])
