@@ -15,6 +15,8 @@ physics_material_override = ExtResource("1_85nfe")
 lock_rotation = true
 contact_monitor = true
 script = ExtResource("1_anaht")
+start_speed_mean = 40.0
+start_speed_deviation = 10.0
 bouncy = ExtResource("2_5h80t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
