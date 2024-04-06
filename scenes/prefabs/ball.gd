@@ -22,6 +22,7 @@ func update_sprite():
 		return
 	if bouncy:
 		sprite.texture = bouncy.texture
+		sprite.modulate = bouncy.color
 	else:
 		sprite.texture = null
 

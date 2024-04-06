@@ -7,3 +7,4 @@
 script = ExtResource("1_utqmr")
 name = "Rock"
 texture = ExtResource("2_7dyrj")
+color = Color(1, 0.498039, 0, 1)

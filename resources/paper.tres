@@ -7,3 +7,4 @@
 script = ExtResource("1_6y5vb")
 name = "Paper"
 texture = ExtResource("2_4woxo")
+color = Color(0, 0.498039, 1, 1)

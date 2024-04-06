@@ -7,3 +7,4 @@
 script = ExtResource("1_su7d4")
 name = "Scissors"
 texture = ExtResource("2_xjs3k")
+color = Color(0, 1, 0.498039, 1)
