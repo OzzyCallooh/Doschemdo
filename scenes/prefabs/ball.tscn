@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://xk4cxaj6wq4j"]
+[gd_scene load_steps=7 format=3 uid="uid://xk4cxaj6wq4j"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://bvvb3n21ka0c6" path="res://scenes/prefabs/ball_physics_material.tres" id="1_85nfe"]
 [ext_resource type="Script" path="res://scenes/prefabs/ball.gd" id="1_anaht"]
 [ext_resource type="Resource" uid="uid://bnio3br5hjy8q" path="res://resources/paper.tres" id="2_5h80t"]
 [ext_resource type="Texture2D" uid="uid://cjfgpnb3af74x" path="res://images/paper.svg" id="3_3irf7"]
+[ext_resource type="AudioStream" uid="uid://dr6pgin0f10bg" path="res://sounds/chime.mp3" id="5_44p0e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbxkk"]
 radius = 14.0357
@@ -31,5 +32,9 @@ shape = SubResource("CircleShape2D_cbxkk")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("3_3irf7")
+
+[node name="ChangedSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_44p0e")
+volume_db = -15.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

@@ -8,6 +8,7 @@ class_name Bouncy
 @export_flags_2d_physics var collision_layer
 @export_flags_2d_physics var area2d_mask
 @export_flags_2d_physics var area2d_layer
+@export var change_sound_pitch: float = 1
 
 var bouncy_transitions: BouncyTransitions:
 	get:

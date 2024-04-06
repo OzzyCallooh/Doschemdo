@@ -574,18 +574,18 @@ custom_minimum_size = Vector2(0, 17.305)
 layout_mode = 2
 script = ExtResource("5_dnos4")
 bouncy = ExtResource("6_dcune")
-min_size_factor = Vector2(3, 0)
+min_size_factor = Vector2(12, 0)
 
 [node name="ColorRect (Rock)" type="ColorRect" parent="HUD/HBoxContainer"]
 custom_minimum_size = Vector2(0, 17.305)
 layout_mode = 2
 script = ExtResource("5_dnos4")
 bouncy = ExtResource("7_w54r6")
-min_size_factor = Vector2(3, 0)
+min_size_factor = Vector2(12, 0)
 
 [node name="ColorRect (Scissors)" type="ColorRect" parent="HUD/HBoxContainer"]
 custom_minimum_size = Vector2(0, 17.305)
 layout_mode = 2
 script = ExtResource("5_dnos4")
 bouncy = ExtResource("8_0p68x")
-min_size_factor = Vector2(3, 0)
+min_size_factor = Vector2(12, 0)

@@ -12,3 +12,4 @@ collision_mask = 11
 collision_layer = 4
 area2d_mask = 10
 area2d_layer = 4
+change_sound_pitch = 0.6
